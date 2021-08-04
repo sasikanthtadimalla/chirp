@@ -1,0 +1,27 @@
+{
+  "name": "chirp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasikanthtadimalla/chirp.git"
+  },
+  "author": "Sasi Kanth T",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sasikanthtadimalla/chirp/issues"
+  },
+  "homepage": "https://github.com/sasikanthtadimalla/chirp#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.4",
+    "nodemailer": "^6.6.3",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,136 @@
+body {
+  padding: 0;
+  padding-bottom: 5rem;
+}
+
+section {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+/******************************************* SEARCH SECTION ****************************************/
+
+.search-bar {
+  width: 30rem !important;
+  height: 3rem !important;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-radius: 50px !important;
+}
+
+.search-bar input {
+  width: 20rem !important;
+  height: 3rem !important;
+  padding: 1rem 2rem !important;
+  border-radius: 50px !important;
+}
+
+/******************************************* FEED SECTION ****************************************/
+
+#feed-section {
+  padding-left: 25rem !important;
+  padding-right: 25rem !important;
+  margin: 5rem;
+}
+
+.name-div, .post-title, .post-content {
+  text-align: left;
+}
+
+.title-div {
+  margin-bottom: 3rem;
+}
+
+.name-div {
+  display: flex;
+  align-items: center;
+}
+
+.name-div div {
+  text-align: left;
+}
+
+.post-div {
+  padding: 1rem;
+}
+
+.photo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.post-title {
+  margin-bottom: 2rem;
+}
+
+.post-div {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/****************************************** MEDIA QUERIES **********************************************/
+
+@media (max-width: 1281px) {
+  #feed-section {
+    padding-left: 15rem !important;
+    padding-right: 15rem !important;
+  }
+}
+
+@media (max-width: 1025px) {
+  #feed-section {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .col-md-3, .col-md-9 {
+    width: 100%;
+    margin: 2rem auto;
+    justify-content: center;
+  }
+
+  .name-div h3, .name-div p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+
+  #search-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .search-bar {
+    width: 15rem !important;
+    height: 3rem !important;
+    border-radius: 50px !important;
+    margin: 5rem auto;
+  }
+  
+  .search-bar input {
+    width: 10rem !important;
+    height: 3rem !important;
+    padding: 1rem 2rem !important;
+    border-radius: 50px !important;
+  }
+  
+  #feed-section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin: 5rem 0;
+  }
+
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,19 @@
+PERSON 
+  personID
+  emailID
+
+USER
+  fullName
+  email
+  password
+  (photo)
+  otp
+  verified
+  posts [postID]
+  friends [friendEmailID]
+
+POST 
+  postID
+  title
+  body
+  time

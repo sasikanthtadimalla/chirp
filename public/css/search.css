@@ -1,0 +1,170 @@
+body {
+  padding: 0;
+  padding-bottom: 5rem;
+}
+
+section {
+  padding-left: 10rem !important;
+  padding-right: 10rem !important;
+}
+
+/******************************************* SEARCH SECTION ****************************************/
+
+.search-bar {
+  width: 30rem !important;
+  height: 3rem !important;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-radius: 50px !important;
+}
+
+.search-bar input {
+  width: 20rem !important;
+  height: 3rem !important;
+  padding: 1rem 2rem !important;
+  border-radius: 50px !important;
+}
+
+/******************************************* FEED SECTION ****************************************/
+
+#feed-section {
+  padding-left: 25rem !important;
+  padding-right: 25rem !important;
+  margin: 5rem;
+}
+
+h1 {
+  margin: 7rem auto;
+  text-align: center;
+}
+
+.post-div {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 3rem;
+}
+
+.img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-div {
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.photo {
+  height: 120px;
+  min-width: 120px;
+  border-radius: 50%;
+}
+
+.btn {
+  width: 10rem;
+}
+
+i {
+  color: white;
+}
+
+.unfriend {
+  background-color: #b71c1c !important;
+}
+
+@media (max-width: 1281px) {
+  section {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  #feed-section {
+    padding-left: 15rem !important;
+    padding-right: 15rem !important;
+  }
+}
+
+@media (max-width: 1025px) {
+  section {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  #feed-section {
+    padding-left: 10rem !important;
+    padding-right: 10rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  #feed-section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .search-bar {
+    width: 20rem !important;
+  }
+  
+  .search-bar input {
+    width: 20rem !important;
+  }
+
+  section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  #feed-section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin: 2rem;
+  }
+
+  .post-div {
+    padding-top: 3rem;
+  }
+
+  h1 {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 361px) {
+
+  .search-bar {
+    width: 15rem !important;
+  }
+  
+  .search-bar input {
+    width: 15rem !important;
+  }
+
+  section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  #feed-section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin: 1rem;
+  }
+
+  .post-div {
+    padding-top: 3rem;
+  }
+}

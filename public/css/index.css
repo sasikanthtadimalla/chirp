@@ -1,0 +1,80 @@
+section {
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 20%;  
+}
+
+h1 {
+  margin: 5rem auto 2rem;
+}
+
+input, .input-group {
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+
+span, .input-group {
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup {
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+}
+
+.card h4 {
+  font-weight: bolder;
+}
+
+.card {
+  width: 30rem !important;
+  padding: 2rem;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.card-body {
+  padding-bottom: 0 !important;
+}
+
+/*********************************************** MEDIA QUERIES ********************************************/
+
+@media (max-width: 769px) {
+  .col-md-6 {
+    width: 100%;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  img {
+    width: 30%;  
+  }
+
+  body {
+    padding: 0 2rem !important;    
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .col-md-6 {
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
+}
