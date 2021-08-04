@@ -25,4 +25,30 @@ router.post('/',(req, res) => {
   })
 });
 
+router.post('/addFriend', (req, res) => {
+
+  let friends;
+
+  User.findOne({email: 'sasithekanth@gmail.com'}, (err, foundPerson) => {
+    if (err) {
+      console.log(err);
+    } else {
+      friends = foundPerson.friends;
+      friends.push(req.body.friendEmail);
+      User.updateOne({email: 'sasithekanth@gmail.com'}, {
+        friends: friends
+      }, (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log('New friend added.');
+        }
+      })
+    } 
+    
+  })
+
+
+})
+
 module.exports = router;

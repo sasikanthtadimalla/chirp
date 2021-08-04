@@ -1,7 +1,6 @@
 const express = require('express');
 
 const User = require('./../collections/user');
-const Person = require('./../collections/person');
 
 const router = express.Router();
 
@@ -25,20 +24,7 @@ router.post('/', (req, res) => {
             console.log(err);
           } else {
             console.log('User verified.');
-
-            const newPerson = new Person({
-              email: 'sasithekanth@gmail.com'
-            });
-
-            newPerson.save(err => {
-              if (err) {
-                console.log(err);
-              } else {
-                console.log('User added to Person Table');
-                res.redirect('/feed');
-              }
-            })
-
+            res.redirect('/feed');
           }
         })
         

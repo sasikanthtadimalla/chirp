@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 
 mongoose.connect("mongodb://localhost:27017/chirpDB", {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true});
 
-app.use('/sample', require('./routes/sample'));
+// app.use('/sample', require('./routes/sample'));
 
 app.use('/', require('./routes/home'));
 app.use('/signup', require('./routes/signup'));

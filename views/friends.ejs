@@ -47,59 +47,36 @@
     </div>
   </nav>
 
-  <section id="search-section">
+  <!-- <section id="search-section">
     <form action="/friends" method="POST">
       <div class="input-group mb-3 search-bar">      
         <input type="search" name="friendName" class="form-control" placeholder="Search for your friends ...">          
       </div>  
     </form>
-  </section>
+  </section> -->
 
-  <h1>Your Friends (3)</h1>
+  <h1>Your Friends (<%= friends.length %>)</h1>
 
   <section id="feed-section">
 
-    <div class="container-fluid post-div">
-      <div class="row title-div">
-        <div class="col-md-4 img-div">
-          <img class="photo" src="images/samplePhoto.jpg" alt="">
-        </div>
-        <div class="col-md-8 name-div">
-          <div>
-            <h3>Sasi Kanth Tadimalla</h3>
-            <button class="btn rounded-pill unfriend"> <i class="fas fa-times"></i> &nbsp;  Unfriend</button>
+    <% friends.forEach((friend) => { %>
+      <div class="container-fluid post-div">
+        <div class="row title-div">
+          <div class="col-md-4 img-div">
+            <img class="photo" src="images/samplePhoto.jpg" alt="">
+          </div>
+          <div class="col-md-8 name-div">
+            <div>
+              <form action="/friends/unFriend" method="POST">
+                <h3><%= friend.name %></h3>
+                <input type="hidden" value="<%= friend.email %>" name="friendEmail">
+                <button type="submit" class="btn rounded-pill unfriend"> <i class="fas fa-times"></i> &nbsp;  Unfriend</button>
+              </form>              
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="container-fluid post-div">
-      <div class="row title-div">
-        <div class="col-md-4 img-div">
-          <img class="photo" src="images/samplePhoto.jpg" alt="">
-        </div>
-        <div class="col-md-8 name-div">
-          <div>
-            <h3>Sasi Kanth Tadimalla</h3>
-            <button class="btn rounded-pill unfriend"> <i class="fas fa-times"></i> &nbsp;  Unfriend</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid post-div">
-      <div class="row title-div">
-        <div class="col-md-4 img-div">
-          <img class="photo" src="images/samplePhoto.jpg" alt="">
-        </div>
-        <div class="col-md-8 name-div">
-          <div>
-            <h3>Sasi Kanth Tadimalla</h3>
-            <button class="btn rounded-pill unfriend"> <i class="fas fa-times"></i> &nbsp;  Unfriend</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <% }) %>
 
   </section>
 
